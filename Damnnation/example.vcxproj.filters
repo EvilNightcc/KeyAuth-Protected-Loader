@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="protextion\protectmain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="api">
+      <UniqueIdentifier>{d9cee197-056b-42cf-90d9-e2e20d8ad45d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="api\KeyAuth.hpp">
+      <Filter>api</Filter>
+    </ClInclude>
+    <ClInclude Include="protextion\xorstr.hpp" />
+    <ClInclude Include="protextion\protectmain.h" />
+    <ClInclude Include="protextion\VMProtectSDK.h" />
+    <ClInclude Include="protextion\skCrypt.h" />
+    <ClInclude Include="protextion\safe_ptr.hpp" />
+    <ClInclude Include="protextion\lazy.h" />
+    <ClInclude Include="protextion\Imports.hpp" />
+    <ClInclude Include="protextion\antidump.h" />
+    <ClInclude Include="protextion\anti_debugger.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="SecureEngineSDK64.lib" />
+    <Library Include="VMProtectSDK64.lib" />
+    <Library Include="libcurl.lib" />
+    <Library Include="library_x64.lib" />
+  </ItemGroup>
+</Project>
